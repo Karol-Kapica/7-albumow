@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>7 albumów</title>
+</head>
+<body id="menubg">
+    <header>7 albumów</header>
+    <br>
+    <div class="desktop">
+    <table class=menu>
+        <tr>
+            <td><a href="ten.html"><img src=foto/ten.jpg  alt="Ten"></a><br>Ten</td>
+            <td><a href="dd.html"><img src=foto/dd.jpg  alt="Demon Days"></a><br>Demon Days</td>
+            <td><a href="tb.html"><img src="foto/tb.jpg"  alt="The Bends"></a><br>The Bends</td>
+        </tr>
+    </table>
+    <table class=menu>
+        <tr>
+            <td><a href="mt.html"><img src="foto/mt.jpg"  alt="Meteora"></a><br>Meteora</td>
+            <td><a href="mf.html"><img src="foto/mf.jpg"  alt="Mm..Food"></a><br>Mm..Food</td>
+            <td><a href="wp.html"><img src="foto/wp.webp"  alt="WRPLA"></a><br>WRPLA</td>
+            <td><a href="sd.html"><img src="foto/sd.jfif"  alt="Songs For The Deaf"></a><br>Songs For The Deaf</td>
+        </tr>
+    </table>
+    </div>
+    <div class="tablet">
+        <table class=menu>
+            <tr>
+                <td><a href="ten.html"><img src=foto/ten.jpg  alt="Ten"></a><br>Ten</td>
+                <td><a href="dd.html"><img src=foto/dd.jpg  alt="Demon Days"></a><br>Demon Days</td>
+            </tr>
+            <tr>
+                <td><a href="tb.html"><img src="foto/tb.jpg"  alt="The Bends"></a><br>The Bends</td>
+                <td><a href="mt.html"><img src="foto/mt.jpg"  alt="Meteora"></a><br>Meteora</td>
+            </tr>
+
+            <tr>
+            <td><a href="mf.html"><img src="foto/mf.jpg"  alt="Mm..Food"></a><br>Mm..Food</td>
+            <td><a href="wp.html"><img src="foto/wp.webp"  alt="WRPLA"></a><br>WRPLA</td>
+            </tr>
+        </table>
+        <table class=menu>
+            <tr>
+                <td><a href="sd.html"><img src="foto/sd.jfif"  alt="Songs For The Deaf"></a><br>Songs For The Deaf</td>
+            </tr>
+        </table>
+    </div>
+    <div class="mobile">
+        <table class=menu>
+            <tr><td><a href="ten.html"><img src=foto/ten.jpg  alt="Ten"></a><br>Ten</td></tr>
+            <tr><td><a href="dd.html"><img src=foto/dd.jpg  alt="Demon Days"></a><br>Demon Days</td></tr>
+            <tr><td><a href="tb.html"><img src="foto/tb.jpg"  alt="The Bends"></a><br>The Bends</td></tr>
+            <tr><td><a href="mt.html"><img src="foto/mt.jpg"  alt="Meteora"></a><br>Meteora</td></tr>
+            <tr><td><a href="mf.html"><img src="foto/mf.jpg"  alt="Mm..Food"></a><br>Mm..Food</td></tr>
+            <tr><td><a href="wp.html"><img src="foto/wp.webp"  alt="WRPLA"></a><br>WRPLA</td></tr>
+            <tr><td><a href="sd.html"><img src="foto/sd.jfif"  alt="Songs For The Deaf"></a><br>Songs For The Deaf</td></tr>
+        </table>
+    </div>
+    <footer>Karol Kapica 2tc | <a href=ankieta.html>Wypełnij ankietę!</a></footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img');
+
+    function setBackground(image) {
+        document.body.style.backgroundImage = `url(${image.src})`;
+    }
+    images.forEach(image => {
+        image.addEventListener('mouseover', () => setBackground(image));
+    });
+});
+    </script>
+</body>
+</html>

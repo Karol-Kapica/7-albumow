@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>7 albumów</title>
+</head>
+<body id="menubg">
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><b>Menu</b></a>
+        <a href="ten.html">Ten</a>
+        <a href="dd.html">Demon Days</a>
+        <a href="tb.html">The Bends</a>
+        <a href="mt.html">Meteora</a>
+        <a href="mf.html">Mm..Food</a>
+        <a href="wp.html">WRPLA</a>
+        <a href="sd.html">SFTD</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <h1>Ankieta</h1>
+    <div class="desktop">
+      <form action="#" method="post">
+      <table class="survlayout">
+        <tr>
+          <td><label for="name">Imię:</label><br>
+            <input type="text" id="name" name="name" required=""></td>
+          <td><label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required=""></td>
+          <td><label>Czy wszystkie informacje zawarte na stronie były ci znane?</label><br>
+            <input type="radio" id="yes" name="info" value="yes">
+            <label for="yes">Tak</label>
+            <input type="radio" id="no" name="info" value="no">
+            <label for="no">Nie</label></td>
+          <td><label for="favorite">Najlepszy album ze strony:</label><br>
+            <select id="favorite" name="favorite">
+                <option value="ten">Ten</option>
+                <option value="dd">Demon Days</option>
+                <option value="tb">The Bends</option>
+                <option value="mt">Meteora</option>
+                <option value="mf">Meteora</option>
+                <option value="mp">WRPLA</option>
+                <option value="sd">Songs For The Deaf</option>
+            </select></td>
+        </tr>
+      </table>
+      <table class="survlayout">
+        <tr>
+          <td><button type="submit">Wyślij</button></td>
+          <td><button type="reset">Wyczyść</button></td>
+        </tr>
+      </table>
+    </form>
+    </div>
+    <div class="tablet">
+      <form action="#" method="post">
+      <table class="survlayout">
+        <tr>
+          <td><label for="namet">Imię:</label><br>
+            <input type="text" id="namet" name="namet" required=""></td>
+          <td><label for="emailt">Email:</label><br>
+            <input type="email" id="emailt" name="emailt" required=""></td>
+            
+        </tr>
+        <tr>
+          <td><label>Czy wszystkie informacje zawarte na stronie były ci znane?</label><br>
+            <input type="radio" id="yest" name="infot" value="yes">
+            <label for="yest">Tak</label>
+            <input type="radio" id="not" name="infot" value="no">
+            <label for="not">Nie</label></td>
+          <td><label for="favoritet">Najlepszy album ze strony:</label><br>
+            <select id="favoritet" name="favoritet">
+                <option value="tent">Ten</option>
+                <option value="ddt">Demon Days</option>
+                <option value="tbt">The Bends</option>
+                <option value="mtt">Meteora</option>
+                <option value="mft">Meteora</option>
+                <option value="mpt">WRPLA</option>
+                <option value="sdt">Songs For The Deaf</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td><button type="submit">Wyślij</button></td>
+          <td><button type="reset">Wyczyść</button></td>
+        </tr>
+      </table>
+    </form>
+    </div>
+    <div class="mobile">
+      <form action="#" method="post">
+        <table class="survlayout">
+          <tr>
+            <td><label for="namem">Imię:</label><br>
+              <input type="text" id="namem" name="namem" required=""></td>
+          </tr>
+          <tr>
+            <td><label for="emailm">Email:</label><br>
+              <input type="email" id="emailm" name="emailm" required=""></td>
+          </tr>
+          <tr>
+            <td><label>Czy wszystkie informacje zawarte na stronie były ci znane?</label><br>
+              <input type="radio" id="yesm" name="infom" value="yes">
+              <label for="yesm">Tak</label>
+              <input type="radio" id="nom" name="infom" value="no">
+              <label for="nom">Nie</label></td>
+          </tr>
+          <tr>
+            <td><label for="favoritem">Najlepszy album ze strony:</label><br>
+              <select id="favoritem" name="favoritem">
+                  <option value="tenm">Ten</option>
+                  <option value="ddm">Demon Days</option>
+                  <option value="tbm">The Bends</option>
+                  <option value="mtm">Meteora</option>
+                  <option value="mfm">Meteora</option>
+                  <option value="mpm">WRPLA</option>
+                  <option value="sdm">Songs For The Deaf</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td><button type="reset">Wyczyść</button></td>
+          </tr>
+          <tr>
+            <td><button type="submit">Wyślij</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <footer>Karol Kapica 2tc</footer>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      } 
+      </script>
+</body>
+</html>
